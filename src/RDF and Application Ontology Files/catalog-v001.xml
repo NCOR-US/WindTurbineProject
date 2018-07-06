@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/no/ontologies/2017/6/DesignOntology/" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/product-lifecycle-ontologies%20development%20version%200.1/DesignOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/UnitsOfMeasureOntology" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/common-core-ontologies%20version%201_0_1/UnitsOfMeasureOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/common-core-ontologies%20version%201_0_1/ArtifactOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/QualityOntology" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/common-core-ontologies%20version%201_0_1/QualityOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/common-core-ontologies%20version%201_0_1/AgentOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/GeospatialOntology" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/common-core-ontologies%20version%201_0_1/GeospatialOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bfo.owl" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/BFO%20class%20latest.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.obofoundry.org/ro/ro.owl" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/ro.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Upper/ExtendedRelationOntology" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/common-core-ontologies%20version%201_0_1/ExtendedRelationOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/TimeOntology" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/common-core-ontologies%20version%201_0_1/TimeOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/common-core-ontologies%20version%201_0_1/InformationEntityOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/common-core-ontologies%20version%201_0_1/EventOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/common-core-ontologies%20version%201_0_1/AllCoreOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/no/ontologies/2017/1/CEO-ontology/" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/product-lifecycle-ontologies%20development%20version%200.1/CommercialEntitiesOntology%20(CEO).ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/no/ontologies/2017/1/PLC-ontology/" uri="file:/Users/NO/Desktop/CHAMP%20Turtles/product-lifecycle-ontologies%20development%20version%200.1/ProductLifeCycle%20(PLC).ttl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+</catalog>

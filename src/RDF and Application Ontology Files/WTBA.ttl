@@ -1,0 +1,322 @@
+# baseURI: http://example.com/wtb/appont
+# imports: http://www.semanticweb.org/no/ontologies/2017/1/PLC-ontology/
+# imports: http://www.semanticweb.org/no/ontologies/2017/6/DesignOntology/
+# imports: http://www.w3.org/2004/02/skos/core
+# prefix: wtb-ao
+
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ro: <http://www.obofoundry.org/ro/ro.owl#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix wtb-ao: <http://example.com/wtb/appont#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/wtb/appont>
+  rdf:type owl:Ontology ;
+  spin:imports <http://topbraid.org/spin/rdfsplus> ;
+  spin:imports <http://topbraid.org/spin/spinowl> ;
+  rdfs:comment "This is an application ontology that is to be used to facilitate a wind turbine analysis."@en ;
+  rdfs:label "wind turbine blade design application ontology" ;
+  owl:imports <http://www.semanticweb.org/no/ontologies/2017/1/PLC-ontology/> ;
+  owl:imports <http://www.semanticweb.org/no/ontologies/2017/6/DesignOntology/> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionIRI <http://example.com/wtb/ver002/appont> ;
+  owl:versionInfo "0.2.0" ;
+.
+wtb-ao:Beam
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Artifact ;
+.
+wtb-ao:BendingMoment
+  rdf:type owl:Class ;
+  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+.
+wtb-ao:BulkDensity
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Density ;
+.
+wtb-ao:ConsolidatedMaterialThickness
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Thickness ;
+.
+wtb-ao:CrossSectionArea
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:TwoDimensionalExtent ;
+.
+wtb-ao:CustomerRequirement
+  rdf:type owl:Class ;
+  rdfs:subClassOf <http://www.semanticweb.org/no/ontologies/2017/6/DesignOntology/CustomerRequirement> ;
+.
+wtb-ao:DensityOfMatrix
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Density ;
+.
+wtb-ao:FlangeThickness
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Thickness ;
+.
+wtb-ao:GaugeSectionThickness
+  rdf:type owl:Class ;
+  rdfs:label "gauge section thickness" ;
+  rdfs:subClassOf cco:Thickness ;
+.
+wtb-ao:Height
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Height ;
+.
+wtb-ao:HollowCircleBeam
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:Beam ;
+.
+wtb-ao:HollowRectangleBeam
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:Beam ;
+.
+wtb-ao:IBeam
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:Beam ;
+.
+wtb-ao:InnerRadius
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Diameter ;
+.
+wtb-ao:InsideHeight
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:Height ;
+.
+wtb-ao:InsideWidth
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Width ;
+.
+wtb-ao:MatrixMaterialFunction
+  rdf:type owl:Class ;
+  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+.
+wtb-ao:MaximumDeflection
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:OneDimensionalExtent ;
+.
+wtb-ao:MaximumStrain
+  rdf:type owl:Class ;
+  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+.
+wtb-ao:MaximumStress
+  rdf:type owl:Class ;
+  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+.
+wtb-ao:ModulusOfElasticity
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:InformationContentEntity ;
+.
+wtb-ao:MomentOfInertiaX
+  rdf:type owl:Class ;
+  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+.
+wtb-ao:MomentOfInertiaY
+  rdf:type owl:Class ;
+  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+.
+wtb-ao:NumberOfPlys
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Amount ;
+.
+wtb-ao:PortionOf1MeterSquareDryReinforcementMaterial
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfReinforcementMaterial ;
+.
+wtb-ao:PortionOfAramidFibre
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfFibre ;
+.
+wtb-ao:PortionOfBasaltFibre
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfFibre ;
+.
+wtb-ao:PortionOfCarbonFibre
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfFibre ;
+.
+wtb-ao:PortionOfCompositeMaterial
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Artifact ;
+.
+wtb-ao:PortionOfETypeGlassFiber
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfGlassFibre ;
+.
+wtb-ao:PortionOfElastomer
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfPolymer ;
+.
+wtb-ao:PortionOfEpoxyResins
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfThermosetMatrixComposite ;
+.
+wtb-ao:PortionOfFibre
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Artifact ;
+.
+wtb-ao:PortionOfFlax
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfNaturalFibre ;
+.
+wtb-ao:PortionOfGlassFibre
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfFibre ;
+.
+wtb-ao:PortionOfHemp
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfNaturalFibre ;
+.
+wtb-ao:PortionOfMatrixMaterial
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Artifact ;
+  owl:equivalentClass [
+      rdf:type owl:Class ;
+      owl:intersectionOf (
+          cco:Artifact
+          [
+            rdf:type owl:Restriction ;
+            owl:onProperty cco:has_role ;
+            owl:someValuesFrom wtb-ao:MatrixMaterialFunction ;
+          ]
+        ) ;
+    ] ;
+.
+wtb-ao:PortionOfNaturalFibre
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfFibre ;
+.
+wtb-ao:PortionOfPolyesters
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfThermosetMatrixComposite ;
+.
+wtb-ao:PortionOfPolyethyleneFibre
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfFibre ;
+.
+wtb-ao:PortionOfPolymer
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Artifact ;
+.
+wtb-ao:PortionOfPolymerMatrixComposite
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfCompositeMaterial ;
+.
+wtb-ao:PortionOfRTypeGlassFiber
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfGlassFibre ;
+.
+wtb-ao:PortionOfReinforcementMaterial
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Artifact ;
+  owl:equivalentClass [
+      rdf:type owl:Class ;
+      owl:intersectionOf (
+          cco:Artifact
+          [
+            rdf:type owl:Restriction ;
+            owl:onProperty cco:has_role ;
+            owl:someValuesFrom wtb-ao:ReinforcementMaterialFunction ;
+          ]
+        ) ;
+    ] ;
+.
+wtb-ao:PortionOfSTypeGlassFiber
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfGlassFibre ;
+.
+wtb-ao:PortionOfSisal
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfNaturalFibre ;
+.
+wtb-ao:PortionOfThermoplasticMatrixComposite
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfPolymerMatrixComposite ;
+.
+wtb-ao:PortionOfThermoplasticPolymer
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfPolymer ;
+.
+wtb-ao:PortionOfThermosetMatrixComposite
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfPolymerMatrixComposite ;
+.
+wtb-ao:PortionOfThermosettingPolymer
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfPolymer ;
+.
+wtb-ao:PortionOfVinylEsters
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfThermosetMatrixComposite ;
+.
+wtb-ao:PortionOfWood
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:PortionOfNaturalFibre ;
+.
+wtb-ao:ProjectedLifeCycles
+  rdf:type owl:Class ;
+  rdfs:comment "A prediction of how many cycles the blade will in fact cycle during each life."@en ;
+  rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
+.
+wtb-ao:Radius
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Diameter ;
+.
+wtb-ao:ReinforcementMaterialFunction
+  rdf:type owl:Class ;
+  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+.
+wtb-ao:ReversalsToFailure
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:InformationContentEntity ;
+.
+wtb-ao:SolidRectangleBeam
+  rdf:type owl:Class ;
+  rdfs:subClassOf wtb-ao:Beam ;
+.
+wtb-ao:SpecificationOfRequiredLifeCycles
+  rdf:type owl:Class ;
+  rdfs:comment "A specification of how many cycles a blade is specified to produce during its lifetime."@en ;
+  rdfs:subClassOf cco:MotionArtifactFunctionSpecification ;
+.
+wtb-ao:TotalArealWeightDensity
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Density ;
+.
+wtb-ao:UniformLoadRootOfBeam
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Force ;
+.
+wtb-ao:UniformLoadTipOfBeam
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Force ;
+.
+wtb-ao:Volume
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:ThreeDimensionalExtent ;
+.
+wtb-ao:VolumeFraction
+  rdf:type owl:Class ;
+  rdfs:label "volume fraction" ;
+  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+.
+wtb-ao:VolumeFractionMeasurement
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:ProportionalRatioMeasurementInformation ;
+.
+wtb-ao:WebThickness
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Thickness ;
+.
+wtb-ao:WeightDensity
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:Density ;
+.
+wtb-ao:WeightFraction
+  rdf:type owl:Class ;
+  rdfs:subClassOf cco:ProportionalRatioMeasurementInformation ;
+.
